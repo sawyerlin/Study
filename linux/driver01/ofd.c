@@ -3,12 +3,12 @@
 #include <linux/kernel.h>
 
 static int __init ofd_init(void) {
-    printk(KERN_INFO "Namaskar: ofd registered");
+    printk(KERN_INFO "Namaskar: ofd registered\n");
     return 0;
 }
 
 static void __exit ofd_exit(void) {
-    printk(KERN_INFO "Alvida: ofd unregistered");
+    printk(KERN_INFO "Alvida: ofd unregistered\n");
 }
 
 module_init(ofd_init);
