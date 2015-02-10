@@ -1,7 +1,7 @@
 ifneq (${KERNELRELEASE},)
-	obj-m != ofd.o
+	obj-m := ofd.o
 else
-	KERNEL_SOURCE := /usr/src/linux-headers-3.13.0-45
+	KERNEL_SOURCE := /usr/src/linux-headers-3.13.0-45-generic
 	PWD := $(shell pwd)
 default:
 	${MAKE} -C ${KERNEL_SOURCE} SUBDIRS=${PWD} modules
